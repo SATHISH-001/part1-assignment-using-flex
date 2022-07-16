@@ -1,0 +1,153 @@
+body {
+    margin: 20px 40px;
+  }
+  
+  p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-top: 16px;
+  }
+  
+  /*--- This is the CSS class for the green rectangular blocks. Note that it uses display: flex ---*/
+  .wrapper {
+    display: flex;
+    height: 60px;
+    background-color: green;
+    margin-bottom: 20px;
+    
+  }
+  
+  /*--- flex: 1 makes it so that the div takes up all available space left in the parent element ---*/
+  .redExample {
+    flex: 1;
+    background-color: red;
+  }
+  
+  /*--- Since both .redExample and .blueExample have flex: 1, they will take up an equal amount of space because they meet in the middle ---*/
+  .blueExample {
+    flex: 1;
+    background-color: blue;
+  }
+  
+  /*--- flex-direction: row-reverse orders all child elements starting from right to left ---*/
+  .emptyExample2 {
+    display: flex;
+    flex: 1;
+    flex-direction: row-reverse;
+  }
+  
+  .blueExample2 {
+    width: 80px;
+    background-color: blue;
+  }
+  
+  /* TODO: Add CSS for the rest of your solution below */
+
+  /*row3 For the third row, the red and blue end rectangles 
+  should remain the same width, and the green space should shrink.
+
+Possible Approach: Have a div with a red background and a div with 
+a blue background,
+both with fixed width. Use an appropriate value for Justify Content.*/
+ .emptyExample3 {
+    display: flex;
+   }
+  .redExample3 {
+    width: 80px;
+    background-color: red;
+    justify-content: left;
+  }
+  .emptyExample31 {
+    display: flex;
+    flex:1;
+    justify-content: right;
+}
+ .blueExample32 {
+    width: 80px;
+    background-color:blue;
+  }
+  /*row 4 For the fourth row, the blue end
+   rectangle should remain the same width,
+   and the red rectangle/* should shrink.*/
+  .redExample4 {
+    display: flex;
+    flex-grow: 1;
+    background-color: red;
+   }
+  .blueExample4{
+    background-color: blue;
+    justify-content: left;
+    width: 80px;
+  }
+  /*row5*/
+  .redExample5 {
+    margin-top: 10px;
+    width: 40px;
+    height:40px;
+    background-color: red; 
+}
+.emptyExample5{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+/*row6*/
+.redExample6{
+    background-color: red;
+}
+
+.emptyExample61{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    background-color: red;
+} 
+.blueExample6{
+    background-color:blue;
+    width: 80px;
+}
+/*row7*/
+.emptyExample7{
+  display: flex;
+}             
+.redExample73{
+  width: 80px;
+  background-color: red;
+}
+.emptyExample71{
+  display: flex;
+  flex-grow: 2;
+  align-items: space-evenly;
+}
+.blueExample72{
+  width: 100%;
+  height: 60px;
+  background-color: blue;
+}
+ 
+/*row 8*/
+.wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+  
+.box{
+  width: 80px;
+  background-color: goldenrod;
+}
+
+
+
+/*row 9*/
+.wrapper2{
+display: flex;
+justify-items: space-between;
+flex-grow: 1;
+gap: 1rem;
+
+}
+.row{
+  width: 80%;
+  background-color: goldenrod;
+}
